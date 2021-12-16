@@ -13,7 +13,7 @@
  
 <div class="container" ng-app="app">
  
-    <h3 style="color:rgb(0, 102, 255)"> Leave Your Name and Let Me Know You Visited My Super Awesome Springboot and Docker App </h3>
+    <h3 style="color:rgb(255, 72, 0)"> Thanks Reyna for visiting... you were the 11th customer!!! You win! </h3>
     
     <div ng-controller="postcontroller">
         <form class="form-horizontal" name="customerForm" ng-submit="submitForm()">
@@ -44,7 +44,7 @@
     </div>
     
     <div class="col-sm-offset-2 col-sm-10" ng-controller="getcontroller">
-        <button id="getAllCustomersId" type="button" class="btn btn-primary" ng-click="getfunction()">See Who Else Has Visited</button>
+        <button id="getAllCustomersId" type="button" class="btn btn-primary" ng-click="getfunction()">Click Here to See your Prize</button>
         <ul>
             <li ng-repeat="cust in response">{{cust.firstname + " " + cust.lastname}}</li>
         </ul>
