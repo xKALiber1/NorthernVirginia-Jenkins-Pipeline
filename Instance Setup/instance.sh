@@ -2,14 +2,14 @@ aws ec2 run-instances \
 --image-id ami-050bccbdad17e5050 \
 --security-group-ids sg-04719a4433bbfe694 \
 --instance-type t2.medium \
---key-name OregonKeyPair \
+--key-name NVKeyPair \
 --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=Jenkins}]'
 
 aws ec2 run-instances \
 --image-id ami-050bccbdad17e5050 \
 --security-group-ids sg-04719a4433bbfe694 \
 --instance-type t2.medium \
---key-name OregonKeyPair \
+--key-name NVKeyPair \
 --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=WebServer}]'
 
 aws ec2 run-instances \
